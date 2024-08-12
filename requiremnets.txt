@@ -1,0 +1,6 @@
+faster-whisper
+sentence_transformers
+pinecone
+PyPDF2
+langchain
+groq
