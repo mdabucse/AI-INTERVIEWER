@@ -9,9 +9,3 @@ def text_to_speech(text):
     # Speak the text
     engine.say(text)
     engine.runAndWait()
-
-if __name__ == "__main__":
-    text = "Hello, welcome to text to speech conversion using Python!"
-    
-    # Convert text to speech
-    text_to_speech(text)
