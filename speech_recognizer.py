@@ -3,8 +3,9 @@ import torchaudio
 
 # Load model and processor
 processor = WhisperProcessor.from_pretrained("openai/whisper-tiny.en")
-processor = WhisperProcessor.from_pretrained("openai/whisper-tiny.en")
 model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-tiny.en")
+# processor = WhisperProcessor.from_pretrained("openai/whisper-medium")
+# model = WhisperForConditionalGeneration.from_pretrained("openai/whisper-medium")
 
 def transcribe_audio(audio_file_path, chunk_length_s=30):
     # Load the audio file
@@ -47,5 +48,5 @@ def transcribe_audio(audio_file_path, chunk_length_s=30):
 def Speech_recognizer(path):
     audio_file_path = path
     transcript = transcribe_audio(audio_file_path)
-    # print(transcript)
+    print(transcript)
     return transcript
